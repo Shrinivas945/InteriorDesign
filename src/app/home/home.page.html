@@ -1,20 +1,83 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cool Designs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Support</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<div class="p-5 text-center bg-image rounded-3" style="
+background-image: url('../../assets/background.jpg');
+height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+">
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white">
+        <ion-row>
+          <ion-col>
+            <h1 class="mb-3">From Concept To Reality, We Shape Your <span style="color: orangered;">We Shape Your Interior</span> Story!</h1>
+            <h4 class="mb-3">
+              Not just kitchen or bedroom, get complete interior design solutions with Cool Designs
+            </h4>
+            <ion-button>Explore now</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-list>
+              <ion-list>
+                <ion-title>Design for every budget</ion-title>
+                <ion-item>
+                  <ion-input label="Name:" placeholder="Enter text"></ion-input>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-input label="Mobile Number:" type="number" placeholder="000"></ion-input>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-input label="Budget:" type="number" placeholder="Rs."></ion-input>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-input label="Email:" type="email" placeholder="email@domain.com"></ion-input>
+                </ion-item>
+            
+                <!-- <ion-item>
+                  <ion-input label="Telephone input" type="tel" placeholder="888-888-8888"></ion-input>
+                </ion-item> -->
+              </ion-list>
+            </ion-list>
+          </ion-col>
+        </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    </div>
   </div>
+</div>
+</div>
 </ion-content>
