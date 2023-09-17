@@ -1,0 +1,20 @@
+ion-grid{
+    background-image: linear-gradient(to top, #fddb92 0%, #bdd4d3 100%);
+}
+ion-card{
+    background-image: url("../../assets/kitchen.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+ion-card:hover{
+    background-image: url("../../assets/kitchen.webp");
+    transform: scale(1.1);
+}
+ion-card-title{
+    color: white;
+    
+}

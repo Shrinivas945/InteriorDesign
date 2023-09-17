@@ -2,7 +2,7 @@
   <ion-toolbar color="primary">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cool Designs</a>
+        <a class="navbar-brand" href="#">CoolDesigns</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -13,7 +13,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link active" aria-current="page" [routerLink]="['/about']">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Support</a>
@@ -30,54 +30,179 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<div class="p-5 text-center bg-image rounded-3" style="
-background-image: url('../../assets/background.jpg');
-height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-">
-<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-  <div class="d-flex justify-content-center align-items-center h-100">
-    <div class="text-white">
-        <ion-row>
-          <ion-col>
-            <h1 class="mb-3">From Concept To Reality, We Shape Your <span style="color: orangered;">We Shape Your Interior</span> Story!</h1>
-            <h4 class="mb-3">
-              Not just kitchen or bedroom, get complete interior design solutions with Cool Designs
-            </h4>
-            <ion-button>Explore now</ion-button>
-          </ion-col>
-          <ion-col>
-            <ion-list>
-              <ion-list>
-                <ion-title>Design for every budget</ion-title>
-                <ion-item>
-                  <ion-input label="Name:" placeholder="Enter text"></ion-input>
-                </ion-item>
-            
-                <ion-item>
-                  <ion-input label="Mobile Number:" type="number" placeholder="000"></ion-input>
-                </ion-item>
-            
-                <ion-item>
-                  <ion-input label="Budget:" type="number" placeholder="Rs."></ion-input>
-                </ion-item>
-            
-                <ion-item>
-                  <ion-input label="Email:" type="email" placeholder="email@domain.com"></ion-input>
-                </ion-item>
-            
-                <!-- <ion-item>
-                  <ion-input label="Telephone input" type="tel" placeholder="888-888-8888"></ion-input>
-                </ion-item> -->
-              </ion-list>
-            </ion-list>
-          </ion-col>
-        </ion-row>
 
+  <ion-grid class="jumbo">
+    <ion-row>
+      <ion-col>
+        <h1 class="mb-3">From Concept To Reality, We Shape Your <ion-label style="color: #F15A29;">We Shape Your Interior</ion-label > Story!</h1>
+        <h4 style="color: #ffffff; font-weight: bold;">
+          Not just kitchen or bedroom, get complete interior <ion-label style="color: #F15A29;">design solutions</ion-label> with Cool Designs
+        </h4>
+        <ion-button [routerLink]="['/explore']">Explore now</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-list>
+          <ion-title>Design for every budget</ion-title>
+          <ion-item>
+            <ion-input label="Name:" placeholder="Enter text"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input label="Mobile Number:" type="number" placeholder="000"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input label="Budget:" type="number" placeholder="Rs."></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input label="Email:" type="email" placeholder="email@domain.com"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-button shape="round" fill="outline" color="secondary" id="present-alert">Submit</ion-button>
+              <ion-alert style="text-decoration-color: blueviolet;"
+                        trigger="present-alert"
+                        message="Thank You!
+                                 You will get the designs at your budget through your email!!">
+              </ion-alert>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+    <div class="crafting">
+      <h1>Crafting Comfort, Crafting Beauty!</h1>
+      <p>When you choose Kitchenation for your home, you unlock the perfect blend of aesthetics 
+        and functionality. We utilise cutting-edge technology that guarantees your home’s 
+        timeless and impeccable appearance.
+      </p>
+      <div class="text-center">
+      <ion-button shape="round" fill="outline" [routerLink]="['/register']">Book a Free Consultation Today!</ion-button>
+      </div>
     </div>
+  
+    <div class="number">
+    <h1 class="text-center">Let Our Numbers Do The Talking! </h1>
+    <ion-row>
+      <ion-col>
+        <div class="s">
+          <h1>500+</h1>
+          <h3>Projects Delieverd</h3>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="s">
+          <h1>350+</h1>
+          <h3>Designs</h3>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="s">
+          <h1>40</h1>
+          <h3>Cities</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    </div>
+    
+
+  <div class="container">
+    <h1 style="color: black;">Here’s What Our Clients Have To Say!</h1>
+    <ion-row>
+
+    <ion-col>
+      <ion-card>
+        <img alt="Office Interior" src="../../assets/office.jpg" />
+        <ion-card-header>
+          <ion-card-title>Office Interior</ion-card-title>
+          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+        </ion-card-header>
+        <ion-card-content>
+          A light, sleek and modern office furnishing often creates a professional appearance. 
+          You make use of design office furniture, lots of light in the office space ...
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col>
+      <ion-card>
+        <img alt="House Interior" src="../../assets/home.jpg" />
+        <ion-card-header>
+          <ion-card-title>House Interior</ion-card-title>
+          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+        </ion-card-header>
+
+        <ion-card-content>
+          The interior of the house is focused around a large central hallway serving as the 
+          main avenue of traffic and entrance area to the adjacent rooms.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col>
+      <ion-card>
+        <img alt="Shop Interior" src="../../assets/shop1.jpg" />
+        <ion-card-header>
+          <ion-card-title>Shop Interior</ion-card-title>
+          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+        </ion-card-header>
+
+        <ion-card-content>
+          The options for interior store design are as limitless as the imagination of the 
+          designer. There can be neon signs or natural wood, industrial looking ceilings ...
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    </ion-row>
   </div>
-</div>
-</div>
+
+
+  <ion-row>
+    <ion-col class="col-img">
+      <h1>Cool Designs</h1>
+      <p>Together we create!</p>
+    </ion-col>
+    <ion-col class="design1">
+        <h1 class="design2">Grab Your Home Interior Guide</h1>
+        <p>Remember to explore these essential 
+          design principles before embarking on your interior design journey!</p>
+          <div class="text-center">
+            <ion-button>Download</ion-button>
+          </div>
+    </ion-col>
+  </ion-row>
+  
+  <div class="cdr">
+    <h1 class="text-center">Our Trustred Partners</h1>
+      <ion-row>
+        <ion-col><ion-img src="../../assets/c1.jpg">ha</ion-img></ion-col>
+        <ion-col><ion-img src="../../assets/c2.jpg">na</ion-img></ion-col>
+        <ion-col><ion-img src="../../assets/c3.jpg">ja</ion-img></ion-col>
+        <ion-col><ion-img src="../../assets/c4.jpg">ka</ion-img></ion-col>
+      </ion-row>
+    </div>
+    
+  <div class="support text-center">
+    <h1>Get In Touch</h1>
+      <p>Contact us via WhatsApp or give us a call for a top-notch home design experience.</p>
+        <ion-button>0731 4024184
+          <ion-icon name="call-outline" slot="start"></ion-icon>
+        </ion-button>
+        <ion-button>Whatsapp
+          <ion-icon name="logo-whatsapp" slot="start"></ion-icon>
+        </ion-button>
+  </div>
+      
+  <div class="book text-center">
+    <h1>Your Ideal Home Is A Click Away</h1>
+      <p>Schedule a complimentary consultation with our skilled interior designers.
+        Begin</p>
+      <ion-button shape="round" fill="outline" color="dark"[routerLink]="['/explore']">
+        Begin Your Design Journey Today!
+      </ion-button>
+  </div>
+
 </ion-content>
