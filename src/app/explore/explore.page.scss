@@ -2,7 +2,6 @@ ion-grid{
     background-image: linear-gradient(to top, #fddb92 0%, #bdd4d3 100%);
 }
 ion-card{
-    background-image: url("../../assets/kitchen.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,10 +10,26 @@ ion-card{
     flex-direction: column-reverse;
 }
 ion-card:hover{
-    background-image: url("../../assets/kitchen.webp");
     transform: scale(1.1);
 }
+#c1{
+    background-image: url("../../assets/kitchen.webp");
+}
+#c2{
+    background-image: url("../../assets/bedroom.webp");
+}
+#c3{
+    background-image: url("../../assets/livingroom.webp");
+}
+#c4{
+    background-image: url("../../assets/bathroom.webp");
+}
+#c5{
+    background-image: url("../../assets/spacesaving.webp");
+}
+#c6{
+    background-image: url("../../assets/homeoffice.webp");
+}
 ion-card-title{
-    color: white;
-    
+    color: whitesmoke; 
 }

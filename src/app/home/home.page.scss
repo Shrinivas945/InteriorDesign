@@ -55,6 +55,14 @@ ion-list:hover{
   margin: 75px;
 }
 
+.crafting > h1 {
+  margin-left: 89px;
+}
+
+.crafting > p {
+  margin: 20px;
+}
+
 .number{
   background: #1f4037;  
   background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
@@ -97,20 +105,19 @@ h1{
   color: black;
   font-size: 45px;
   background-image: linear-gradient(to right, rgba(194, 253, 255, 0.623), rgb(109, 179, 236));
-  padding: 10%, 0, 40%, 0;
+  padding: 10%, 0, 60%, 0;
 }
 .cdr > h1{
   color: #8c8c8c;
   margin: 0%;
+  padding-top: 30px;
 }
-
 
 .support{
   color: black;
   background: #3E5151;  
   background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  
   background: linear-gradient(to right, #DECBA4, #3E5151); 
-
   padding: 10%;
   font-size: large;
 }
@@ -132,4 +139,8 @@ h1{
 
 ion-card:hover{
   transform: scale(1.1);
+}
+
+.row{
+  background-color: black;
 }
