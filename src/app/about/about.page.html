@@ -1,7 +1,9 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <!-- <ion-title>Back</ion-title> -->
-    <ion-title class="text-center" [routerLink]="['/home']">About</ion-title>
+    <!-- <ion-title class="text-center" [routerLink]="['/home']">About/Home</ion-title> -->
+    <app-header></app-header>
   </ion-toolbar>
 </ion-header>
 
@@ -22,59 +24,42 @@
         idea.
       </p>
     </ion-text>
-      <ion-list>
-        <h1 style="color: white;">Interior Designer Responsibilities:</h1>
-        <ion-item>Outline client design objectives.</ion-item>
-        <ion-item>Conceptualize and sketch design plans.</ion-item>
-        <ion-item>Determine cost of completion and project requirements in the budgeting phase.</ion-item>
-        <ion-item>Set a timeline for the completion of an interior design project.</ion-item>
-        <ion-item>Source materials and products included in plans.</ion-item>
-        <ion-item>Create 'mood boards' to sample your design vision.</ion-item>
-        <ion-item>Utilize computer applications in the design process.</ion-item>
-        <ion-item>Inspect design after completion to determine whether client goals have been met.</ion-item>
-      </ion-list>
-      <br>
-      <ion-list>
-        <h1 style="color: white;">Interior Designer Requirements:</h1>
-        <ion-item>Bachelor's degree in interior design or related field.</ion-item>
-        <ion-item>Portfolio of design work.</ion-item>
-        <ion-item>Project management experience.</ion-item>
-        <ion-item>Experience with computational design.</ion-item>
-        <ion-item>Highly creative, imaginative and artistic.</ion-item>
-        <ion-item>Excellent communication skills, especially in regard to communicating an 
-                  artistic vision.
-        </ion-item>
-        <ion-item>
-          Proficiency in AutoCAD, Illustrator, SketchUp or similar design software.
-        </ion-item>
-      </ion-list>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <h1 style="color: black;">Interior Designer Responsibilities:</h1>
+          <ion-item>Outline client design objectives and fullfil client's requirements.</ion-item>
+          <ion-item>Conceptualize and sketch design plans to create projects.</ion-item>
+          <ion-item>Determine cost of completion and project requirements in the budgeting phase.</ion-item>
+          <ion-item>Set a timeline for the completion of an interior design project.</ion-item>
+          <ion-item>Source materials and products included in plans.</ion-item>
+          <ion-item>Create 'mood boards' to sample your design vision.</ion-item>
+          <ion-item>Inspect design after completion to determine whether client goals have been met.</ion-item>
+        </ion-list>
+      </ion-col>
 
-      <!-- <ion-content class="ion-padding">
-         <h1>Content</h1> -->
-      <!-- </ion-content>  -->
-      <ion-footer>
-         <ion-toolbar>
-          <ion-title>
-            <ion-row class="footer">
-              <ion-col size=""><ion-icon name="logo-facebook"></ion-icon></ion-col>
-              <ion-col size="2"><ion-icon name="logo-twitter"></ion-icon></ion-col>
-              <ion-col size="2"><ion-icon name="logo-google"></ion-icon></ion-col>
-              <ion-col size="2"><ion-icon name="logo-instagram"></ion-icon></ion-col>
-              <ion-col size="2"><ion-icon name="logo-linkedin"></ion-icon></ion-col>
-              <ion-col size="2"><ion-icon name="logo-github"></ion-icon></ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col><h3>Sign up for our newsletter</h3></ion-col>
-              <ion-col>
-                <ion-input label="Email:" placeholder="Email Address" color="dark"></ion-input>
-            </ion-col>
-              <ion-col>
-                <ion-button fill="outline" color="primary">subscribe</ion-button>
-              </ion-col>
-            </ion-row>
-          </ion-title>
-        </ion-toolbar> 
-     </ion-footer>
-     
+      <ion-col>
+        <ion-list>
+          <h1 style="color: black;">Interior Designer Responsibilities:</h1> 
+          <ion-item>Outline client design objectives and fullfil client's requirements.</ion-item>
+          <ion-item>Conceptualize and sketch design plans to create projects.</ion-item>
+          <ion-item>Determine cost of completion and project requirements in the budgeting phase.</ion-item>
+          <ion-item>Set a timeline for the completion of an interior design project.</ion-item>
+          <ion-item>Source materials and products included in plans.</ion-item>
+          <ion-item>Create 'mood boards' to sample your design vision.</ion-item>
+          <ion-item>Inspect design after completion to determine whether client goals have been met.</ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
   </ion-grid>
+
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <!-- <div class="content"> -->
+    <!-- <h1>Sliding Diagonals Background Effect</h1> -->
+  <!-- </div> -->
+
+  
+  
 </ion-content>

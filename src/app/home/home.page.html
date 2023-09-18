@@ -1,42 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">CoolDesigns</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" [routerLink]="['/about']">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Support</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+    <app-header></app-header>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
   <ion-grid class="jumbo">
     <ion-row>
       <ion-col>
-        <h1 class="mb-3">From Concept To Reality, We Shape Your <ion-label style="color: #F15A29;">We Shape Your Interior</ion-label > Story!</h1>
+        <h1 class="mb-3">From Concept To Reality,<ion-label style="color: #F15A29;">We Shape Your Interior</ion-label > Story!</h1>
         <h4 style="color: #ffffff; font-weight: bold;">
-          Not just kitchen or bedroom, get complete interior <ion-label style="color: #F15A29;">design solutions</ion-label> with Cool Designs
+          Not just kitchen or bedroom, get complete interior <ion-label style="color: #000000;">design solutions</ion-label> with Cool Designs
         </h4>
         <ion-button [routerLink]="['/explore']">Explore now</ion-button>
       </ion-col>
@@ -61,10 +35,12 @@
           </ion-item>
           <ion-item>
             <ion-button shape="round" fill="outline" color="secondary" id="present-alert">Submit</ion-button>
-              <ion-alert style="text-decoration-color: blueviolet;"
-                        trigger="present-alert"
-                        message="Thank You!
-                                 You will get the designs at your budget through your email!!">
+              <ion-alert trigger="present-alert"
+                         header="Message"
+                         message="Thank You!
+                                 You will get the designs at your budget through your email!!"
+                         [buttons]="alertButtons">
+
               </ion-alert>
           </ion-item>
         </ion-list>
@@ -79,7 +55,7 @@
         timeless and impeccable appearance.
       </p>
       <div class="text-center">
-      <ion-button shape="round" fill="outline" [routerLink]="['/register']">Book a Free Consultation Today!</ion-button>
+      <ion-button shape="round" fill="outline" color="light" [routerLink]="['/register']">Book a Free Consultation Today!</ion-button>
       </div>
     </div>
   
@@ -109,7 +85,7 @@
     
 
   <div class="container">
-    <h1 style="color: black;">Here’s What Our Clients Have To Say!</h1>
+    <h1 style="color: black;" class="text-center">Here’s What Our Projects Have To Say!</h1>
     <ion-row>
 
     <ion-col>
@@ -117,7 +93,6 @@
         <img alt="Office Interior" src="../../assets/office.jpg" />
         <ion-card-header>
           <ion-card-title>Office Interior</ion-card-title>
-          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
         </ion-card-header>
         <ion-card-content>
           A light, sleek and modern office furnishing often creates a professional appearance. 
@@ -131,7 +106,6 @@
         <img alt="House Interior" src="../../assets/home.jpg" />
         <ion-card-header>
           <ion-card-title>House Interior</ion-card-title>
-          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
         </ion-card-header>
 
         <ion-card-content>
@@ -146,7 +120,6 @@
         <img alt="Shop Interior" src="../../assets/shop1.jpg" />
         <ion-card-header>
           <ion-card-title>Shop Interior</ion-card-title>
-          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
         </ion-card-header>
 
         <ion-card-content>
@@ -205,4 +178,36 @@
       </ion-button>
   </div>
 
+  <!-- <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <h3 class="text-center">Register for Free
+        <ion-button shape="round" fill="outline" [routerLink]="['/register']">Sign Up</ion-button>
+      </h3>
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <ion-icon name="logo-twitter"></ion-icon>    
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <ion-icon name="logo-google"></ion-icon>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer> -->
+  <app-footer></app-footer>
 </ion-content>
